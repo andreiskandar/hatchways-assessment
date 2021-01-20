@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const useApplicationData = () => {
   const HATCHWAYS_URL = 'https://api.hatchways.io/assessment/students';
+
   const [fetchedData, setFetchedData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [searchName, setSearchName] = useState([]);
